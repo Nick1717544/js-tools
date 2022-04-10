@@ -1,9 +1,3 @@
-/**
- * Testing params
- */
-
-console.clear()
-
 class Word
 {
     /**
@@ -109,5 +103,17 @@ class Word
     }
 }
 
-const word = new Word('hello', {caseSensitive: true})
-console.log(word.searchWithoutPosition('e', 3));
+/**
+ * 
+ * @param {number} min 
+ * @param {number} max 
+ * @returns returns a number between the min and the max
+ */
+
+const generateRandomNumber = (min, max) =>
+{
+    if (typeof min !== 'number', typeof max !== 'number')
+    {
+        return 'error'
+    } else { return Math.round(Math.random() * (max - min) + min) }
+}
